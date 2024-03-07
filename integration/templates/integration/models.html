@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>MyModel</h1>
+<ul>
+    {% for MyModel in models %}
+        <li>
+            {{ MyModel.name }} {{ MyModel.age }}
+        </li>
+        
+    {% endfor %}
+</ul>
+
+{% endblock content %}
